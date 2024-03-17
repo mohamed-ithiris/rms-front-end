@@ -1,5 +1,3 @@
-// api/employee.ts
-
 import axios from "axios";
 import { endpoints } from "./endpoints";
 
@@ -27,7 +25,7 @@ export const registerEmployee = async (formData: TRegisterEmployee) => {
     const response = await axios.post(endpoints.getEmployees, formData);
 
     if (response.status !== 201) {
-      throw new Error("Failed to register employee");
+      throw new Error("Failed to register!");
     }
 
     return response.data;

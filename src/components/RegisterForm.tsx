@@ -24,7 +24,7 @@ const validationSchema = Yup.object().shape({
   password: Yup.string().min(6, 'Password must be at least 6 characters').required('Password is required')
 });
 
-const Register: NextPage = () => {
+const RegisterForm: NextPage = () => {
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -158,4 +158,4 @@ const Register: NextPage = () => {
   );
 };
 
-export default Register;
+export default RegisterForm;

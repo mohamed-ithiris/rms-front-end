@@ -21,3 +21,9 @@
     text-wrap: balance;
   }
 }
+
+button, [type='button'], [type='reset'], [type='submit'] {
+  -webkit-appearance: #1677ff;
+  background-color: #1677ff;
+  background-image: #1677ff;
+}

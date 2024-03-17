@@ -1,11 +1,11 @@
-import EmployeeRegistrationForm from "@/components/employeeRegistrationForm";
+import RegisterForm from "@/components/RegisterForm";
 import Link from "next/link";
 
 export default function RegisterPage() {
     return (
         <main>
+            <RegisterForm />
             Register page
-            <EmployeeRegistrationForm />
             <Link href={"/login"}>Login</Link>
         </main>
     );
